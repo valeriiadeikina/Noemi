@@ -19,7 +19,7 @@
 
 .header {
     position: relative;
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
+    background-image: url(../img/banner-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -157,7 +157,7 @@
     position: absolute;
     width: 10px;
     height: 20px;
-    background-image: url(https://raw.githubusercontent.com/netology-code/mq-diploma/44ce368d08172b8bcfd9e57182932478dd8dc022/sources/svg/form-arrows.svg);
+    background-image: url(../svg/form-arrows.svg);
     background-size: cover;
     background-repeat: no-repeat;
     bottom: 40px;
@@ -197,7 +197,7 @@
     position: absolute;
     width: 17px;
     height: 17px;
-    background-image: url(https://raw.githubusercontent.com/netology-code/mq-diploma/44ce368d08172b8bcfd9e57182932478dd8dc022/sources/svg/form-empty-circle.svg);
+    background-image: url(..svg/form-empty-circle.svg);
     top: 0;
     left: 0;
     cursor: pointer;
@@ -206,7 +206,7 @@
 }
 
 .radio-check:checked~.radio-text::before {
-    background-image: url(https://raw.githubusercontent.com/netology-code/mq-diploma/44ce368d08172b8bcfd9e57182932478dd8dc022/sources/svg/form-circle.svg);
+    background-image: url(../svg/form-circle.svg);
 }
 
 .text-area {
@@ -272,6 +272,9 @@
     justify-content: end;
     padding: 17px 19px;
     position: relative;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .trend-container::after {
@@ -286,27 +289,23 @@
 }
 
 .trand-1 {
-    background-image: url(https://github.com/netology-code/mq-diploma/blob/master/sources/img/trend1.jpg?raw=true);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../img/trend1.jpg);
+
 }
 
 .trand-2 {
-    background-image: url(https://github.com/netology-code/mq-diploma/blob/master/sources/img/trend2.jpg?raw=true);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../img/trend2.jpg);
+   
 }
 
 .trand-3 {
-    background-image: url(https://github.com/netology-code/mq-diploma/blob/master/sources/img/trend3.jpg?raw=true);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../img/trend3.jpg);
+   
 }
 
 .trand-4 {
-    background-image: url(https://github.com/netology-code/mq-diploma/blob/master/sources/img/trend4.jpg?raw=true);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../img/trend4.jpg);
+    
 }
 
 .trend-content {
@@ -504,7 +503,7 @@ input::placeholder {
     width: 48px;
     height: 48px;
     background-color: #b59f5b;
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+    background-image: url(../svg/search.svg);
     background-repeat: no-repeat;
     background-size: 20px;
     background-position: center center;
@@ -638,8 +637,6 @@ input::placeholder {
     margin-bottom: 24px;
 }
 
-.themes_container {}
-
 .topic_item {
     font-size: 14px;
     font-weight: 700;
@@ -684,10 +681,12 @@ input::placeholder {
 
 .shop-container {
     display: flex;
+    gap: 50px;
+    
 }
 
 .craft-item-card {
-    width: 33.33%;
+    max-width: 260px;
     margin: 29px 56px 84px;
     display: flex;
     flex-direction: column;
@@ -695,9 +694,10 @@ input::placeholder {
 
 .craft-img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: 204px;
     background-color: grey;
+    object-fit: cover;
 }
 
 .craft-container {
@@ -778,9 +778,7 @@ input::placeholder {
 }
 
 .dribble {
-    display: block;
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg);
-    background-repeat: no-repeat;
+    display: block;   
     width: 20px;
     height: 20px;
     margin-right: 30px;
@@ -788,8 +786,6 @@ input::placeholder {
 
 .pinterest {
     display: block;
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg);
-    background-repeat: no-repeat;
     width: 20px;
     height: 20px;
     margin-right: 30px;
@@ -797,8 +793,6 @@ input::placeholder {
 
 .tumblr {
     display: block;
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
-    background-repeat: no-repeat;
     width: 20px;
     height: 20px;
     margin-right: 30px;
@@ -835,6 +829,10 @@ input::placeholder {
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
     body {
         max-width: 1200px;
+    }
+
+    header {
+        background-image: url(../img/banner-bg-tablet.jpg);    
     }
 
     .menu {
@@ -938,6 +936,11 @@ input::placeholder {
         max-width: 1200px;
     }
 
+    
+    header {
+        background-image: url(../img/banner-bg-tablet.jpg);    
+    }
+
     .menu {
         display: none;
     }
@@ -1028,9 +1031,10 @@ input::placeholder {
 }
 
 @media (max-width: 640px) and (orientation: landscape) {
-    .header {
-        background-position: -650px;
+    .header {        
+        background-image: url(../img/banner-mobile.jpg);    
     }
+
 
     .logo_menu {
         flex-direction: column;
@@ -1072,6 +1076,10 @@ input::placeholder {
     .trend-article {
         width: calc(50% - 4px);
         margin: 4px 0;
+    }
+
+    .trend-content {
+        padding: 5%;
     }
 
     .trend-link {
@@ -1166,7 +1174,8 @@ input::placeholder {
     }
 
     .shop-container {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
 
     .craft-item-card {
@@ -1189,8 +1198,9 @@ input::placeholder {
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
-    .header {
-        background-position: -650px;
+    .header {        
+        background-image: url(../img/banner-mobile.jpg);    
+        height: 100vh;
     }
 
     .logo_menu {
@@ -1225,8 +1235,8 @@ input::placeholder {
     }
 
     .trend-content {
-        padding: 30px 23px;
-    }
+        padding: 5%;
+}
 
     .trends-gallery {
         display: block;
@@ -1332,7 +1342,9 @@ input::placeholder {
     }
 
     .shop-container {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        
     }
 
     .craft-item-card {
