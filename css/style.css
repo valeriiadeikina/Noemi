@@ -912,7 +912,7 @@ input::placeholder {
         flex-wrap: wrap;
         margin-left: 57px;
         margin-right: 57px;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .craft-item-card {
@@ -1011,7 +1011,7 @@ input::placeholder {
         flex-wrap: wrap;
         margin-left: 57px;
         margin-right: 57px;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .craft-item-card {
